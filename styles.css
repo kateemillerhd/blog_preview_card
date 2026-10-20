@@ -1,1 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    border-radius: 12px;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+#author {
+    display: flex;
+    flex-direction: row;
+}
