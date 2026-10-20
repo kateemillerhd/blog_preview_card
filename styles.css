@@ -2,29 +2,90 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(47, 88%, 63%);
 }
 
 .container {
     display: flex;
     flex-direction: column;
-
+    /*justify-content: center;*/
+    width: calc(100% - 48px);
+    max-width: 384px;
+  
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 7%);
     box-shadow: 10px 10px hsl(0, 0%, 7%);
+    border-radius: 18px;
+
+    font-family: "Figtree", sans-serif;
+
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+#img-container {
+    width: 100%;
+    margin: 0 0 24px;
+}
+
+#top-image {
+    display: block;
+    width: 100%;
     border-radius: 12px;
+}
+
+#learning {
+    background-color: hsl(47, 88%, 63%);
+    padding: 4px 12px;
+    font-weight: 800;
+    width: fit-content;
+    margin: 0;
+    border-radius: 4px;
 }
 
 button {
     border: none;
 }
 
-button:hover {
-    cursor: pointer;
-    color: hsl(47, 88%, 63%);
+#published {
+    margin: 12px 0 0;
+}
+
+#published-text {
+    margin: 0;
+}
+
+#foundations-text {
+    font-weight: 800;
+    font-size: 22px;
+    margin: 16px 0 0;
+}
+
+#foundations-text:hover {
+    color: hsl(47, 88%, 63%); 
+}
+
+#summary-text {
+    margin: 16px 0 0;
+    line-height: 1.5;
 }
 
 #author {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin: 24px 0 0;
+}
+
+#avatar {
+    width: 32px;
+    height: 32px;
+}
+
+#name {
+    margin-left: 12px;
+    font-weight: 800;
 }
